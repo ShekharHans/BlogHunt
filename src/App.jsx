@@ -2,10 +2,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Blog from "./pages/blog";
+
 import FullBlogPost from "./pages/FullBlogPost";
 import ErrorPage from "./pages/ErrorPage";
 import NavbarPage from "./pages/Navbar";
+import Blog from "./pages/blog";
 
 function App() {
     return (
