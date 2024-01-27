@@ -1,12 +1,11 @@
 // App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-
 import FullBlogPost from "./pages/FullBlogPost";
 import ErrorPage from "./pages/ErrorPage";
 import NavbarPage from "./pages/Navbar";
-import Blog from "./pages/blog";
+import BlogPage from "./pages/BlogPage";
+
 
 function App() {
     return (
@@ -14,7 +13,7 @@ function App() {
             <NavbarPage />
             <Router>
                 <Routes>
-                    <Route exact path="/" element={<Blog />} />
+                    <Route exact path="/" element={<BlogPage />} />
                     <Route path="/blog/:id" element={<FullBlogPost />} />
                     <Route path="*" element={<ErrorPage />} />
                 </Routes>

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../css/blog.css";
 
-function Blog() {
+function BlogPage() {
     const [posts, setPosts] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
     const navigate = useNavigate();
@@ -89,4 +89,4 @@ function Blog() {
     );
 }
 
-export default Blog;
+export default BlogPage;
