@@ -1,8 +1,7 @@
 // App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import BlogPosts from "./BlogPosts";
-// import FullBlogPost from "./FullBlogPost";
+
 import Blog from "./pages/blog";
 import FullBlogPost from "./pages/FullBlogPost";
 import ErrorPage from "./pages/ErrorPage";
@@ -16,7 +15,6 @@ function App() {
                 <Routes>
                     <Route exact path="/" element={<Blog />} />
                     <Route path="/blog/:id" element={<FullBlogPost />} />
-                    {/* <Route path="/about" element={<About/>} /> */}
                     <Route path="*" element={<ErrorPage />} />
                 </Routes>
             </Router>
