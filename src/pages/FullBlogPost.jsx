@@ -15,7 +15,7 @@ function FullBlogPost() {
     const [selectedVoice, setSelectedVoice] = useState(null);
 
     useEffect(() => {
-        fetch("/src/json/blogPost.json")
+        fetch("/blogPost.json")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Failed to fetch blog posts");

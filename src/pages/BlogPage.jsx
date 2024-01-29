@@ -1,16 +1,16 @@
 // Blog.js
 
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../css/blog.css";
 
 function BlogPage() {
     const [posts, setPosts] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
-    const navigate = useNavigate();
+
 
     useEffect(() => {
-        fetch("/src/json/blogPost.json")
+        fetch("/blogPost.json")
             .then((response) => response.json())
             .then((data) => setPosts(data.posts))
             .catch((error) =>
@@ -30,9 +30,6 @@ function BlogPage() {
         setSearchTerm("");
     };
 
-    const handleAddBlogClick = () => {
-        navigate("/add-blog");
-    };
 
     return (
         <div className="blog-container pt-24">

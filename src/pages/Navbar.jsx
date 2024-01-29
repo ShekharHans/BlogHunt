@@ -4,7 +4,7 @@ import { faBell, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 
 const navigation = [
-    { name: "Home", href: "/", current: true },
+    // { name: "Home", href: "/", current: true },
     { name: "About", href: "/about", current: false },
     { name: "Contact", href: "/contact", current: false },
     // { name: "Calendar", href: "#", current: false },

@@ -1,11 +1,10 @@
 // App.jsx
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 import FullBlogPost from "./pages/FullBlogPost";
 import ErrorPage from "./pages/ErrorPage";
 import NavbarPage from "./pages/Navbar";
 import BlogPage from "./pages/BlogPage";
-
 
 function App() {
     return (
